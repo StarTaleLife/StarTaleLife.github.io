@@ -12,7 +12,7 @@ So, let's talk about what's the graph, what's the convolution and why it's calle
 
 This is the graph we have:
 
-![](../../img/2020-10-09-20-08-40.png)
+![](../../.gitbook/assets/2020-10-09-20-08-40.png)
 
 It can be represented as a heap of (user, item, interaction) triplets Of course, LightGCN is capable to use more than one kind of interaction (just create more LightGCN and concatenate them together).
 
@@ -24,15 +24,15 @@ It’s a bipartite graph of user-item interactions. The paper hasn't described b
 
 Let's recall about the convolution, I think convolution basically is a weighted moving average.
 
-![](../../img/2020-10-09-20-08-41.gif)
+![](../../.gitbook/assets/2020-10-09-20-08-41.gif)
 
 So, how we can extend convolutional operation to graph? The hardest problem is how to do the convolution on such a non-euclidean graph.
 
-![](../../img/2020-10-09-20-14-20.png)
+![](../../.gitbook/assets/2020-10-09-20-14-20.png)
 
 Non-euclidean graph means we don’t have a certain neighborhood number. But in common CNN we have a certain number of neighborhoods.
 
-![](../../img/2020-10-09-20-15-33.png)
+![](../../.gitbook/assets/2020-10-09-20-15-33.png)
 
 Here's the solution, we just update the current node by doing a weighted sum operation from all neighbor nodes and do it again in the next layer. Then we use multi-layers to obtain high-order connectivity.
 
@@ -46,17 +46,17 @@ So, let's take a look at this example to inspect what happened while we're doing
 
 I made a bipartite graph manually like this:
 
-![](../../img/2020-10-09-20-20-02.png)
+![](../../.gitbook/assets/2020-10-09-20-20-02.png)
 
 First of all, we have to generate a symmetric adjacency matrix.
 
-![](../../img/2020-10-09-20-21-06.png)
+![](../../.gitbook/assets/2020-10-09-20-21-06.png)
 
 This is the structure of the adjacency matrix, we don't have user2user or item2item interaction here. O is the zero matrix, R is the **R**elationship matrix it’s a sparse matrix with user count rows and item count columns and the non-zero element is $$w_{ui}$$, the weight between node u(ser) and node i(tem).
 
 Finally, we got the adjacency matrix like this:
 
-![](../../img/2020-10-09-20-23-00.png)
+![](../../.gitbook/assets/2020-10-09-20-23-00.png)
 
 But this is not enough, the signal will be amplified after several layers, so we need to normalize it, there're several ways to do the normalization, we're using the method in the paper: $$\hat{A}=D^{-\frac{1}{2}}AD^{-\frac{1}{2}}$$ The D is the degree matrix.
 
@@ -68,19 +68,19 @@ Every node doing self-connection in the graph.
 
 Now we're going to generate No.2 layer which adjacency matrix is $$\hat{A}^2$$
 
-![](../../img/2020-10-09-20-26-27.png)
+![](../../.gitbook/assets/2020-10-09-20-26-27.png)
 
 Since after jump twice, the user will connect to some other users only and the item will connect to some other items only, so the graph will split into 2 parts.
 
 It happened in every even layer, means layer No. 2 4 6 ...
 
-![](../../img/2020-10-09-20-25-39.png)
+![](../../.gitbook/assets/2020-10-09-20-25-39.png)
 
 Here's the 3rd-order of the graph, we can see most of the nodes connected.
 
-![](../../img/2020-10-09-20-27-29.png)
+![](../../.gitbook/assets/2020-10-09-20-27-29.png)
 
-![](../../img/2020-10-09-20-27-42.png)
+![](../../.gitbook/assets/2020-10-09-20-27-42.png)
 
 The rest layers can be done in the same manner.
 
@@ -106,15 +106,15 @@ Like what I wrote previously, this is a kind of low-pass filter, so finally we w
 
 This is No. 20 layer:
 
-![](../../img/2020-10-09-20-31-16.png)
+![](<../../.gitbook/assets/2020-10-09-20-31-16 (1).png>)
 
 No. 21 layer:
 
-![](../../img/2020-10-09-20-31-23.png)
+![](../../.gitbook/assets/2020-10-09-20-31-23.png)
 
 And No. 22 layer:
 
-![](<../../img/2020-10-09-20-31-16 (1).png>)
+![](../../.gitbook/assets/2020-10-09-20-31-16.png)
 
 See? This is over-smoothing.
 
@@ -124,9 +124,9 @@ Since we explained what is GCN, now let's take a look at why we called it LightG
 
 It simplified the message construction and aggregation, make it linear and direct:
 
-![](../../img/2020-10-09-20-32-42.png)
+![](../../.gitbook/assets/2020-10-09-20-32-42.png)
 
-![](../../img/2020-10-09-20-32-59.png)
+![](../../.gitbook/assets/2020-10-09-20-32-59.png)
 
 But why we remove them?
 
@@ -156,9 +156,9 @@ Not only in LightGCN, this technique is already applied widely.
 
 For example, in this paper, he's trying to contribute a CTR predict model, but they add some other subtasks in training and jointed the loss.
 
-![](../../img/2020-10-09-20-37-16.png)
+![](../../.gitbook/assets/2020-10-09-20-37-16.png)
 
-![](../../img/2020-10-09-20-37-23.png)
+![](../../.gitbook/assets/2020-10-09-20-37-23.png)
 
 Since they never used the model, why they have to train it?
 
@@ -168,7 +168,7 @@ In my POV, it's a special kind of regularization, which means the embedding is n
 
 This is the result the author tested on some public dataset, it improved a lot.
 
-![](../../img/2020-10-09-20-37-43.png)
+![](../../.gitbook/assets/2020-10-09-20-37-43.png)
 
 ## Future Work
 

@@ -25,7 +25,7 @@
   * [1. 引论](FEM/01-preface.md)
   * [2. 基于直接刚度法的杆系有限元方法](FEM/02-direct-stiffness-method.md)
   * [3. 针对复杂几何形状变形体的力学描述（1）](FEM/03-complex-deformable-body-1.md)
-* Web开发相关技术
+* [Web开发相关技术](web-kai-fa-xiang-guan-ji-shu/README.md)
   * [JWT简介](web/jwt.md)
 * [技术杂文](other-tech/README.md)
   * [React-Script转Vite时引用路径的问题](other-tech/vite-import-path.md)

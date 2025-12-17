@@ -8,17 +8,15 @@
 
 而且这也不是微博第一次抄袭，微博之前就通过抄袭知乎的方式来营销并且盈利，但是不幸被知乎以投广告的方式钓鱼并且抓到证据：
 
-- [深挖：知乎起诉的微博营销号「大神说」](https://zhuanlan.zhihu.com/p/25377264)
-- [知乎起诉微博营销号「知乎大神」，快开庭了！](https://web.archive.org/web/20200815173535/https://zhuanlan.zhihu.com/p/24492978)
-  - 可能是因为和小鸡词典一样，“微博还向法庭申请了不公开审理和不公开判决”，所以现在文章只能在互联网备份看到。
-
+* [深挖：知乎起诉的微博营销号「大神说」](https://zhuanlan.zhihu.com/p/25377264)
+* [知乎起诉微博营销号「知乎大神」，快开庭了！](https://web.archive.org/web/20200815173535/https://zhuanlan.zhihu.com/p/24492978)
+  * 可能是因为和小鸡词典一样，“微博还向法庭申请了不公开审理和不公开判决”，所以现在文章只能在互联网备份看到。
 
 > 新浪微博国际版 “有梗百科” 板块，大量抄袭照搬小鸡词典词条。标题，内容，图片，格式，无一不同，抄袭内容多达21278条。
 
 其中微博否认证据，称所有谷歌快照证据，有造假的技术可能性（我笑了），声称所有图片均为伪造。甚至在一审的时候说微博没有网页版。
 
 目前最新的消息是：9月16日，海淀法院一审认为抄袭不存在并驳回了小鸡词典的全部诉讼请求。（我又笑了）
-
 
 ## 360
 
@@ -83,52 +81,52 @@
 
 于是，愤青的我留存了证据（截图的时候我还是个学僧，系统还是XP/Win8这样），随后放置了将近10年都没管。 今天整理资料偶然翻到了，我就小刀拉屁股——给您开开眼，看看当年互联网公司是怎么强奸用户的意愿的。这里的勾选框我都是保留最初的缺省选项，没有改动。
 
-![](../../img/willing/BaiduShurufa\_2013-10-10\_12-54-54.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-10_12-54-54.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-16\_19-7-29.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-16_19-7-29.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-7\_9-44-57.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-7_9-44-57.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-9\_19-52-41.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-9_19-52-41.png)
 
-![](../../img/willing/BaiduShurufa\_2013-11-3\_20-37-0.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-11-3_20-37-0.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-10\_12-55-30.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-10_12-55-30.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-18\_13-21-36.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-18_13-21-36.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-7\_9-45-17.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-7_9-45-17.png)
 
-![](../../img/willing/BaiduShurufa\_2013-11-10\_20-20-8.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-11-10_20-20-8.png)
 
-![](../../img/willing/BaiduShurufa\_2013-11-3\_20-37-46.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-11-3_20-37-46.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-10\_12-56-17.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-10_12-56-17.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-22\_21-38-58.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-22_21-38-58.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-7\_9-46-7.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-7_9-46-7.png)
 
-![](../../img/willing/BaiduShurufa\_2013-11-3\_20-34-20.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-11-3_20-34-20.png)
 
-![](../../img/willing/BaiduShurufa\_2013-11-3\_20-38-20.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-11-3_20-38-20.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-10\_8-4-52.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-10_8-4-52.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-7\_20-34-45.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-7_20-34-45.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-7\_9-53-41.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-7_9-53-41.png)
 
-![](../../img/willing/BaiduShurufa\_2013-11-3\_20-34-44.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-11-3_20-34-44.png)
 
-![](../../img/willing/BaiduShurufa\_2014-1-20\_10-52-39.png)
+![](../../.gitbook/assets/BaiduShurufa_2014-1-20_10-52-39.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-10\_8-5-45.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-10_8-5-45.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-7\_9-43-37.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-7_9-43-37.png)
 
-![](../../img/willing/BaiduShurufa\_2013-10-7\_9-55-6.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-10-7_9-55-6.png)
 
-![](../../img/willing/BaiduShurufa\_2013-11-3\_20-35-34.png)
+![](../../.gitbook/assets/BaiduShurufa_2013-11-3_20-35-34.png)
 
-![](../../img/willing/BaiduShurufa\_2014-1-20\_10-53-26.png)
+![](../../.gitbook/assets/BaiduShurufa_2014-1-20_10-53-26.png)

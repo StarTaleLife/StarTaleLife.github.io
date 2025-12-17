@@ -4,7 +4,7 @@
 
 很久以前，有个大佬说过，集体负责制就是不负责制，真正的负责是要落实到人的。 那么反过来企业级理解，无采样其实就是全采样的意思。
 
-![](../../img/2021-06-19-21-55-53.png)
+![](../../.gitbook/assets/2021-06-19-21-55-53.png)
 
 这里的采样，指的是负采样，所谓负，指的就是负样本，负样本是相对正样本而言的。
 
@@ -14,11 +14,11 @@
 
 难收集？难收集就不要收集咯！
 
-![](../../img/2021-06-19-21-58-26.png)
+![](<../../.gitbook/assets/2021-06-19-21-58-26 (1).png>)
 
 所有用户没发生过行为的，全都是负样本。然后从里面随机采样，为每个正样本拉郎配一些负样本，就可以得到训练数据集。
 
-在这个数据集上应用Ranknet（参见这一篇：[Learning To Rank 之 RankNet](bpr\_and\_hinger.md)），就可以训练出一个像模像样的推荐系统。
+在这个数据集上应用Ranknet（参见这一篇：[Learning To Rank 之 RankNet](bpr_and_hinger.md)），就可以训练出一个像模像样的推荐系统。
 
 可是采样也是个技术活，用户明显表示不喜欢的，采样权重是不是得高点？具体参看这一篇文章： [负样本为王：评Facebook的向量化召回算法](https://zhuanlan.zhihu.com/p/165064102)，这篇文章很好玩，我在实践中发现了和Facebook一样的结论，就是不能只用曝光未点击作为负样本，同时对负样本进行赋权也很重要。
 
@@ -26,7 +26,7 @@
 
 难采？难采就不要采咯！（梅开二度）
 
-![](<../../img/2021-06-19-21-58-26.png>)
+![](<../../.gitbook/assets/2021-06-19-21-58-26 (1).png>)
 
 不采，就是全采，色即是空，这就是这篇文章的重点。我最早读到这个思路是在 _Efficient Non-Sampling Factorization Machines for OptimalContext-Aware Recommendation_ 里面，后来顺藤摸瓜找到了 _Efficient Neural Matrix Factorization without Sampling for Recommendation_ 。但是我意识到，这个Loss其实不止针对FM，任何可以把用户和物品变成向量，最后用内积评分的模型都可以采用这个Loss。
 

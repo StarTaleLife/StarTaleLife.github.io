@@ -4,7 +4,7 @@
 
 这里的国产手机泛指未经Google认证的国产安卓系统手机，并不是指所有Made in China的手机。 事实上，Made in China很有竞争力，有一家厂商推出了一款手机，同时提供纯美国制造的版本，纯美国制造的版本要比世界协作的版本贵一倍：
 
-[![](../img/2021-05-26-12-41-34.png)](https://puri.sm/posts/librem-5-and-librem-5-usa-what-are-the-differences/)
+[![](../.gitbook/assets/2021-05-26-12-41-34.png)](https://puri.sm/posts/librem-5-and-librem-5-usa-what-are-the-differences/)
 
 我今天要说的主要是在中国开发的操作系统，有何问题我会稍后一一列出。
 

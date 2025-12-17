@@ -8,7 +8,7 @@
 
 其实从二次型的视角就很容易看出：
 
-![](../img/2020-07-24-23-17-16.png)
+![](../.gitbook/assets/2020-07-24-23-17-16.png)
 
 （请注意，本文中的推导仅仅是验证实验用，性能并非最优）
 
@@ -20,9 +20,9 @@
 
 * 我们把A矩阵分尸三块：$$A = D - L - U$$
   * 其中，D是对角线，L是上三角取负，U是下三角取负。
-* 这样，$$Ax=b$$ 就可以写成 $$(D-L-U)x=b$$&#x20;
-* 移动一下：$$Dx=(L+U)x + b$$&#x20;
-* 由于D是对角矩阵，可无成本求逆：$$x=D^{-1}(L+U)x+D^{-1}b$$&#x20;
+* 这样，$$Ax=b$$ 就可以写成 $$(D-L-U)x=b$$
+* 移动一下：$$Dx=(L+U)x + b$$
+* 由于D是对角矩阵，可无成本求逆：$$x=D^{-1}(L+U)x+D^{-1}b$$
 
 于是我们利用下列公式迭代更新：
 
@@ -55,7 +55,7 @@ def jacobi_iteration(A,b,init_x,iters=10):
 
 %/accordion%
 
-![](../img/2020-07-25-12-55-28.png)
+![](../.gitbook/assets/2020-07-25-12-55-28.png)
 
 ### Gauss-Seidel
 
@@ -89,7 +89,7 @@ def gauss_seidel_iteration(A,b,init_x,iters=10):
 
 %/accordion%
 
-![](../img/2020-07-25-12-56-57.png)
+![](../.gitbook/assets/2020-07-25-12-56-57.png)
 
 ### 收敛性分析
 
@@ -131,7 +131,7 @@ $$
 
 或者说，走到新的点以后，其梯度应该和当前的梯度正交，这两种表述是等价的：
 
-![](../img/2020-07-24-23-00-21.png)
+![](../.gitbook/assets/2020-07-24-23-00-21.png)
 
 最优解是：
 
@@ -163,7 +163,7 @@ def gradient_desc(A,b,init_x,iters=10):
 
 %/accordion%
 
-![](../img/2020-07-25-12-57-21.png)
+![](../.gitbook/assets/2020-07-25-12-57-21.png)
 
 ## 共轭梯度法
 
@@ -228,12 +228,12 @@ solver_visualizer(A,b,gauss_seidel_iteration(A,b,init_x,10))
 
 ### 参考文献
 
-* [An Introduction to the Conjugate Gradient Method Without the Agonizing Pain](https://www.cs.cmu.edu/\~quake-papers/painless-conjugate-gradient.pdf)
+* [An Introduction to the Conjugate Gradient Method Without the Agonizing Pain](https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf)
   * [共轭梯度法通俗讲义](https://flat2010.github.io/2018/10/26/%E5%85%B1%E8%BD%AD%E6%A2%AF%E5%BA%A6%E6%B3%95%E9%80%9A%E4%BF%97%E8%AE%B2%E4%B9%89/)
 
 ### 软件库收集
 
 * [MKL Sparse Solver Routines](https://software.intel.com/content/www/us/en/develop/documentation/mkl-developer-reference-fortran/top/sparse-solver-routines.html)
 * [PARDISO](https://www.pardiso-project.org/)
-* [Sparse Matrix Solvers on the GPU: Conjugate Gradients and Multigrid](http://www.cs.jhu.edu/\~misha/ReadingSeminar/Papers/Bolz03.pdf)
+* [Sparse Matrix Solvers on the GPU: Conjugate Gradients and Multigrid](http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Bolz03.pdf)
 * [cuSOLVER](https://docs.nvidia.com/cuda/cusolver/index.html)

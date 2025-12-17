@@ -13,7 +13,7 @@
 
 最后导致大家开发了反吸血的qBittorrent。
 
-![](../img/2020-05-05-18-59-17.png)
+![](../.gitbook/assets/2020-05-05-18-59-17.png)
 
 ## qBittorrent 反吸血增强版
 

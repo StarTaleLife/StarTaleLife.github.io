@@ -33,9 +33,9 @@ AB测试中出现两组天然存在指标差异带来的更大问题是，AA测�
 
 直观的画出来，大概长这个样子：
 
-![](../../img/2020-09-19-13-00-10.png)
+![](../../.gitbook/assets/2020-09-19-13-00-10.png)
 
-我觉得两个随机变量还是太多，由于我们关注的并不是CTR本身，而是CTR的差异。 不妨设 $$x_3=x_1-x_2$$，我们可以根据[正态分布求和公式](https://en.wikipedia.org/wiki/Sum\_of\_normally\_distributed\_random\_variables)轻易得到 $$x_3 \sim N(\mu_1-\mu_2,\sigma_1^2+\sigma_2^2)$$。
+我觉得两个随机变量还是太多，由于我们关注的并不是CTR本身，而是CTR的差异。 不妨设 $$x_3=x_1-x_2$$，我们可以根据[正态分布求和公式](https://en.wikipedia.org/wiki/Sum_of_normally_distributed_random_variables)轻易得到 $$x_3 \sim N(\mu_1-\mu_2,\sigma_1^2+\sigma_2^2)$$。
 
 到此为止，我们所有的理论准备完成。
 
@@ -47,7 +47,7 @@ AA测试，主要是估计一个提升的下确界，也就是我们最少要提
 
 在求这个数值之前，我们首先要确定一个单侧的置信度，比如0.05，或者0.01，根据你的容忍程度决定。随后我们可以根据这个数值，计算我们最少应该提升的CTR，如果形象的画个示意图，差不多是这个样子：
 
-![](../../img/2020-09-19-13-59-43.png)
+![](../../.gitbook/assets/2020-09-19-13-59-43.png)
 
 简单的写个代码实现一下：
 
@@ -114,5 +114,5 @@ def get_passed_prob(C_1, N_1, C_2, N_2, epsilon):
 参考资料：
 
 * [scipy.stats.beta](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html)
-* [Understanding empirical Bayes estimation (using baseball statistics)](http://varianceexplained.org/r/empirical\_bayes\_baseball/)
-* [bayesian ab testing](https://docs.pymc.io/en/v3/pymc-examples/examples/case\_studies/bayesian\_ab\_testing.html)
+* [Understanding empirical Bayes estimation (using baseball statistics)](http://varianceexplained.org/r/empirical_bayes_baseball/)
+* [bayesian ab testing](https://docs.pymc.io/en/v3/pymc-examples/examples/case_studies/bayesian_ab_testing.html)
