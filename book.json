@@ -10,8 +10,7 @@
     "localized-footer",
     "mermaid-gb3",
     "ga",
-    "accordion",
-    "comments-footer"
+    "accordion"
   ],
   "pluginsConfig": {
     "hide-element": {
@@ -21,11 +20,6 @@
     },
     "ga": {
       "token": "UA-153583635-2"
-    },
-    "comments-footer": {
-        "type": "github",
-        "repo": "TsingJyujing/blogs",
-        "copyright": "Copyright © TsingJyujing"
     }
   }
 }
