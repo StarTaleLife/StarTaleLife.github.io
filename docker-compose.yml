@@ -1,0 +1,12 @@
+services:
+  gitbook_serve:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tsingjyujing/gitbook-serve
+    tty: true
+    volumes:
+      - .:/book
+    command: sh -c "cd /book && (gitbook install || true) && gitbook serve"
+    ports:
+      - "4000:4000"
